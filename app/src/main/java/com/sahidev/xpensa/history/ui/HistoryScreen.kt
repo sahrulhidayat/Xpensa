@@ -15,7 +15,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.automirrored.outlined.ArrowBack
-import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -27,9 +26,11 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.sahidev.xpensa.R
 
 @Composable
 fun HistoryRoute(modifier: Modifier = Modifier) {
@@ -102,7 +103,7 @@ fun HistoryScreen(modifier: Modifier = Modifier) {
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Default.ShoppingCart,
+                        painter = painterResource(id = R.drawable.ic_file_text_outline),
                         contentDescription = "Bill & Utilities",
                         tint = MaterialTheme.colorScheme.onPrimary
                     )
@@ -139,7 +140,7 @@ fun HistoryScreen(modifier: Modifier = Modifier) {
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Default.ShoppingCart,
+                        painter = painterResource(id = R.drawable.ic_grid_outline),
                         contentDescription = "Food & Drink",
                         tint = MaterialTheme.colorScheme.onPrimary
                     )
@@ -176,7 +177,7 @@ fun HistoryScreen(modifier: Modifier = Modifier) {
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Default.ShoppingCart,
+                        painter = painterResource(id = R.drawable.ic_car_outline),
                         contentDescription = "Transport",
                         tint = MaterialTheme.colorScheme.onPrimary
                     )
@@ -213,7 +214,7 @@ fun HistoryScreen(modifier: Modifier = Modifier) {
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Default.ShoppingCart,
+                        painter = painterResource(id = R.drawable.ic_shopping_cart_outline),
                         contentDescription = "Generals",
                         tint = MaterialTheme.colorScheme.onPrimary
                     )

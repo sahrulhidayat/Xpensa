@@ -20,7 +20,7 @@ enum class TopLevelDestination(
     title = "Blank"
     ),
     RECURRING(
-    iconId = R.drawable.ic_repeat_outline,
+    iconId = R.drawable.ic_credit_card_outline,
     title = "Recurring"
     ),
     PROFILE(

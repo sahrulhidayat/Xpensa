@@ -137,7 +137,7 @@ fun FabGroup(
         contentAlignment = Alignment.BottomCenter
     ) {
         AnimatedFab(
-            icon = painterResource(id = R.drawable.ic_bar_chart),
+            icon = painterResource(id = R.drawable.ic_arrow_circle_up_outline),
             modifier = Modifier
                 .padding(
                     PaddingValues(
@@ -149,7 +149,7 @@ fun FabGroup(
         )
 
         AnimatedFab(
-            icon = painterResource(id = R.drawable.ic_bar_chart),
+            icon = painterResource(id = R.drawable.ic_arrow_circle_down_outline),
             modifier = Modifier.padding(
                 PaddingValues(
                     bottom = 88.dp,
@@ -159,7 +159,7 @@ fun FabGroup(
         )
 
         AnimatedFab(
-            icon = painterResource(id = R.drawable.ic_bar_chart),
+            icon = painterResource(id = R.drawable.ic_credit_card_outline),
             modifier = Modifier.padding(
                 PaddingValues(
                     bottom = 72.dp,

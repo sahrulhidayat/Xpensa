@@ -14,9 +14,8 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material.icons.filled.KeyboardArrowDown
-import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.material.icons.outlined.Notifications
 import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material3.HorizontalDivider
@@ -28,9 +27,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.sahidev.xpensa.R
 
 @Composable
 fun HomeRoute(
@@ -150,7 +151,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
                                 )
                                 Spacer(modifier = Modifier.size(4.dp))
                                 Icon(
-                                    imageVector = Icons.Default.ArrowForward,
+                                    imageVector = Icons.AutoMirrored.Default.ArrowForward,
                                     contentDescription = "See All",
                                     tint = MaterialTheme.colorScheme.primary,
                                     modifier = Modifier.size(18.dp)
@@ -186,7 +187,8 @@ fun TransactionCard(modifier: Modifier = Modifier) {
         ) {
             Icon(
                 modifier = Modifier.padding(horizontal = 12.dp, vertical = 16.dp),
-                imageVector = Icons.Default.ShoppingCart, contentDescription = "Transaction Icon"
+                painter = painterResource(id = R.drawable.ic_shopping_cart_outline),
+                contentDescription = "Transaction Icon"
             )
             Column {
                 Text(text = "Item")
